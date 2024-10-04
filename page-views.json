@@ -1,0 +1,400 @@
+{
+    "generators": [
+        {
+            "url": "https://qoerum.yottaa-devel.com/log-nt/event",
+            "fork": {
+                "key": {
+                    "_gen": "constant",
+                    "x": {
+                        "siteKey": {
+                            "_gen": "oneOf",
+                            "choices": [
+                                "criteNd7kn93MQ",
+                                "Ye_0V4TqgO5ieQ",
+                                "fYvuPWK1zbUzXQ",
+                                "j8906zYRbQtUeQ",
+                                "IID52n4SjSBhkg"
+                            ]
+                        },
+                        "sessionId": {
+                            "_gen": "uuid"
+                        }
+                    }
+                },
+                "maxForks": 10000
+            },
+            "varsOnce": {
+                "userAgent": {
+                    "_gen": "string",
+                    "expr": "#{Internet.userAgentAny}"
+                }
+            },
+            "vars": {
+                "now": {
+                    "_gen": "now"
+                },
+                "connectStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "navigationStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "secureConnectionStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "fetchStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "domContentLoadedEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "responseStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "domInteractiveOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "domainLookupEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "responseEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "redirectStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "requestStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "unloadEventEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "unloadEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "domLoadingOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "domCompleteOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "domainLookupStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "loadEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "domContentLoadedEventEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                "loadEventEndOffset": { "_gen": "normalDistribution", "mean": 20, "sd": 5, "decimals": 0 },
+                "redirectEndOffset": { "_gen": "normalDistribution", "mean": 10, "sd": 5, "decimals": 0 },
+                "connectEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 }
+            },
+            "data": {
+                "siteKey": {
+                    "_gen": "var",
+                    "var": "forkKey",
+                    "path": ["siteKey"]
+                },
+                "uuid": {
+                    "_gen": "uuid"
+                },
+                "formatVersion": "3",
+                "releaseDate": "v8.1.0-2024-05-08T14:03Z",
+                "requestType": "navigation",
+                "fullPageURL": {
+                    "_gen": "string",
+                    "expr": "#{Internet.url}"
+                },
+                "pageCategory": "",
+                "userAgent": {
+                    "_gen": "var",
+                    "var": "userAgent"
+                },
+                "pageTitle": "Lands' End: Quality Clothing, Swimwear, & Outerwear",
+                "lastInteraction": {},
+                "isNavigationSupported": { "_gen": "boolean" },
+                "isResourceTimingSupported": { "_gen": "boolean" },
+                "isPaintTimingSupported": { "_gen": "boolean" },
+                "yOptimizations": null,
+                "eventTimestamp": {
+                    "_gen": "var",
+                    "var": "now"
+                },
+                "entryMap": {
+                    "_gen": "someKeys",
+                    "object": {
+                        "script": {
+                            "count": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [3, 55],
+                                "decimals": 0
+                            },
+                            "size": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [1000000,5000000],
+                                "decimals": 0
+                            }
+                        },
+                        "link": {
+                            "count": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [2, 25],
+                                "decimals": 0
+                            },
+                            "size": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [12000,250000],
+                                "decimals": 0
+                            }
+                        },
+                        "img": {
+                            "count": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [15, 150],
+                                "decimals": 0
+                            },
+                            "size": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [120000,2500000],
+                                "decimals": 0
+                            }
+                        },
+                        "css": {
+                            "count": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [3, 75],
+                                "decimals": 0
+                            },
+                            "size": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [120000,2500000],
+                                "decimals": 0
+                            }
+                        },
+                        "xmlhttprequest": {
+                            "count": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [3, 25],
+                                "decimals": 0
+                            },
+                            "size": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [12000,250000],
+                                "decimals": 0
+                            }
+                        },
+                        "fetch": {
+                            "count": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [4, 18],
+                                "decimals": 0
+                            },
+                            "size": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [100000,500000],
+                                "decimals": 0
+                            }
+                        },
+                        "iframe": {
+                            "count": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [1, 3],
+                                "decimals": 0
+                            },
+                            "size": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [300000,400000],
+                                "decimals": 0
+                            }
+                        },
+                        "other": {
+                            "count": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [1, 5],
+                                "decimals": 0
+                            },
+                            "size": {
+                                "_gen": "uniformDistribution",
+                                "bounds": [40000,70000],
+                                "decimals": 0
+                            }
+                        }
+                    }
+                },
+                "domElementCount": {
+                    "_gen": "uniformDistribution",
+                    "bounds": [1000, 5000],
+                    "decimals": 0
+                },
+                "pagePrefetched": { "_gen": "boolean" },
+                "maxScrollDepth": 0,
+                "sequencing": {
+                    "numScriptsSequenced": {
+                        "_gen": "normalDistribution",
+                        "mean": 50,
+                        "sd": 5,
+                        "decimals": 0
+                    },
+                    "numImagesSequenced": 0,
+                    "numBlocksSequenced": 0,
+                    "numDelayedObjects": {
+                        "_gen": "normalDistribution",
+                        "mean": 50,
+                        "sd": 5,
+                        "decimals": 0
+                    }
+                },
+                "commonDimensions": {
+                    "optState": "active",
+                    "profileId": {
+                        "_gen": "normalDistribution",
+                        "mean": 50000,
+                        "sd": 10000
+                    },
+                    "testVariation": "6-Optimized",
+                    "testVariations": [
+                        {
+                            "testId": 6,
+                            "testName": "A/B Testing",
+                            "variationName": "Optimized",
+                            "sticky": "session",
+                            "time": {
+                                "_gen": "var",
+                                "var": "now"
+                            },
+                            "timeout": 1800000
+                        }
+                    ]
+                },
+                "connection": {
+                    "effectiveType": "4g",
+                    "rtt": 150
+                },
+                "visitor": {
+                    "visitorTimestamp": {
+                        "_gen": "var",
+                        "var": "now"
+                    },
+                    "numVisitorPageViews": 1,
+                    "numSessionPageViews": 1,
+                    "numSessions": 1,
+                    "visitorId": "9830c634-2f18-4b88-bed5-62639c7650f5",
+                    "sessionId": {
+                        "_gen": "var",
+                        "var": "forkKey",
+                        "path": ["sessionId"]
+                    },
+                    "bandwidth": ""
+                },
+                "navigationTiming": {
+                    "connectStart": {
+                        "_gen": "math",
+                        "expr": "now - connectStartOffset"
+                    },
+                    "navigationStart": {
+                        "_gen": "math",
+                        "expr": "now - navigationStartOffset"
+                    },
+                    "secureConnectionStart": {
+                        "_gen": "math",
+                        "expr": "now - secureConnectionStartOffset"
+                    },
+                    "fetchStart": {
+                        "_gen": "math",
+                        "expr": "now - fetchStartOffset"
+                    },
+                    "domContentLoadedEventStart": {
+                        "_gen": "math",
+                        "expr": "now - domContentLoadedEventStartOffset"
+                    },
+                    "responseStart": {
+                        "_gen": "math",
+                        "expr": "now - responseStartOffset"
+                    },
+                    "domInteractive": {
+                        "_gen": "math",
+                        "expr": "now - domInteractiveOffset"
+                    },
+                    "domainLookupEnd": {
+                        "_gen": "math",
+                        "expr": "now - domainLookupEndOffset"
+                    },
+                    "responseEnd": {
+                        "_gen": "math",
+                        "expr": "now - responseEndOffset"
+                    },
+                    "redirectStart": {
+                        "_gen": "math",
+                        "expr": "now - redirectStartOffset"
+                    },
+                    "requestStart": {
+                        "_gen": "math",
+                        "expr": "now - requestStartOffset"
+                    },
+                    "unloadEventEnd": {
+                        "_gen": "math",
+                        "expr": "now - unloadEventEndOffset"
+                    },
+                    "unloadEventStart": {
+                        "_gen": "math",
+                        "expr": "now - unloadEventStartOffset"
+                    },
+                    "domLoading": {
+                        "_gen": "math",
+                        "expr": "now - domLoadingOffset"
+                    },
+                    "domComplete": {
+                        "_gen": "math",
+                        "expr": "now - domCompleteOffset"
+                    },
+                    "domainLookupStart": {
+                        "_gen": "math",
+                        "expr": "now - domainLookupStartOffset"
+                    },
+                    "loadEventStart": {
+                        "_gen": "math",
+                        "expr": "now - loadEventStartOffset"
+                    },
+                    "domContentLoadedEventEnd": {
+                        "_gen": "math",
+                        "expr": "now - domContentLoadedEventEndOffset"
+                    },
+                    "loadEventEnd": {
+                        "_gen": "math",
+                        "expr": "now - loadEventEndOffset"
+                    },
+                    "redirectEnd": {
+                        "_gen": "math",
+                        "expr": "now - redirectEndOffset"
+                    },
+                    "connectEnd": {
+                        "_gen": "math",
+                        "expr": "now - connectEndOffset"
+                    }
+                },
+                "experienceMetrics": {
+                    "cumulative_layout_shift": {
+                        "_gen": "uniformDistribution",
+                        "bounds": [0, 1]
+                    },
+                    "largest_contentful_paint": {
+                        "_gen": "normalDistribution",
+                        "mean": 1000,
+                        "sd": 250
+                    },
+                    "interaction_to_next_paint": {
+                        "_gen": "normalDistribution",
+                        "mean": 20,
+                        "sd": 5,
+                        "decimals": 0
+                    }
+                },
+                "webVitalsInfo": {
+                    "_gen": "loadJsonFile",
+                    "file": "/home/webVitalsInfo.json"
+                },
+                "paintTiming": {
+                    "first-paint": {
+                        "_gen": "uniformDistribution",
+                        "bounds": [200, 800]
+                    },
+                    "first-contentful-paint": {
+                        "_gen": "uniformDistribution",
+                        "bounds": [200, 800]
+                    }
+                },
+                "userTiming": {
+                    "_gen": "loadJsonFile",
+                    "file": "/home/timing.json"
+                },
+                "measureTiming": {
+                    "_gen": "loadJsonFile",
+                    "file": "/home/timing.json"
+                }
+            },
+            "localConfigs": {
+                "maxEvents": {
+                    "_gen": "normalDistribution",
+                    "mean": 7,
+                    "sd": 2
+                },
+                "maxMs": 3600000,
+                "throttleMs": {
+                    "_gen": "uniformDistribution",
+                    "bounds": [5000, 250000]
+                }
+            }
+        }
+    ],
+    "connections": {
+        "saas-webhook": {
+            "kind": "webhook"
+        }
+    }
+}
