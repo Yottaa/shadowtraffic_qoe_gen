@@ -1,0 +1,249 @@
+{
+    "lcp": [
+        {
+            "entryType": "largest-contentful-paint",
+            "duration": 0,
+            "id": "",
+            "name": "",
+            "renderTime": 1141.2999999523163,
+            "startTime": 1141.2999999523163,
+            "size": 330000,
+            "loadTime": 1101.8999999761581,
+            "url": "https://www.landsend.com/_blocks/images/2024-07_sese-banner-d.webp",
+            "resourceIndex": 17,
+            "element": "<img class=\" ls-is-cached lazyloaded\" />"
+        }
+    ],
+    "cls": [
+        {
+            "duration": 0,
+            "entryType": "layout-shift",
+            "hadRecentInput": { "_gen": "boolean" },
+            "lastInputTime": 0,
+            "name": "",
+            "sources": [
+                {
+                    "node": "<button class=\"search-button\" />",
+                    "currentRect": {
+                        "x": 2386,
+                        "y": 92,
+                        "width": 76,
+                        "height": 76,
+                        "top": 92,
+                        "right": 2462,
+                        "bottom": 168,
+                        "left": 2386
+                    },
+                    "previousRect": {
+                        "x": 2395,
+                        "y": 92,
+                        "width": 66,
+                        "height": 76,
+                        "top": 92,
+                        "right": 2461,
+                        "bottom": 168,
+                        "left": 2395
+                    }
+                },
+                {
+                    "node": "<div class=\"account-menu-item-link\" />",
+                    "currentRect": {
+                        "x": 3084,
+                        "y": 111,
+                        "width": 117,
+                        "height": 40,
+                        "top": 111,
+                        "right": 3201,
+                        "bottom": 151,
+                        "left": 3084
+                    },
+                    "previousRect": {
+                        "x": 3078,
+                        "y": 111,
+                        "width": 123,
+                        "height": 40,
+                        "top": 111,
+                        "right": 3201,
+                        "bottom": 151,
+                        "left": 3078
+                    }
+                }
+            ],
+            "startTime": 1235,
+            "value": 0.000008793153983833522
+        },
+        {
+            "duration": 0,
+            "entryType": "layout-shift",
+            "hadRecentInput": { "_gen": "boolean" },
+            "lastInputTime": 0,
+            "name": "",
+            "sources": [
+                {
+                    "node": "<li class=\"root-category-item\" />",
+                    "currentRect": {
+                        "x": 549,
+                        "y": 164,
+                        "width": 438,
+                        "height": 96,
+                        "top": 164,
+                        "right": 987,
+                        "bottom": 260,
+                        "left": 549
+                    },
+                    "previousRect": {
+                        "x": 639,
+                        "y": 164,
+                        "width": 438,
+                        "height": 96,
+                        "top": 164,
+                        "right": 1077,
+                        "bottom": 260,
+                        "left": 639
+                    }
+                },
+                {
+                    "node": "<li class=\"root-category-item\" />",
+                    "currentRect": {
+                        "x": 987,
+                        "y": 164,
+                        "width": 179,
+                        "height": 96,
+                        "top": 164,
+                        "right": 1166,
+                        "bottom": 260,
+                        "left": 987
+                    },
+                    "previousRect": {
+                        "x": 1077,
+                        "y": 164,
+                        "width": 179,
+                        "height": 96,
+                        "top": 164,
+                        "right": 1256,
+                        "bottom": 260,
+                        "left": 1077
+                    }
+                },
+                {
+                    "node": "<li class=\"root-category-item\" />",
+                    "currentRect": {
+                        "x": 1760,
+                        "y": 164,
+                        "width": 223,
+                        "height": 96,
+                        "top": 164,
+                        "right": 1983,
+                        "bottom": 260,
+                        "left": 1760
+                    },
+                    "previousRect": {
+                        "x": 1849,
+                        "y": 164,
+                        "width": 224,
+                        "height": 96,
+                        "top": 164,
+                        "right": 2073,
+                        "bottom": 260,
+                        "left": 1849
+                    }
+                },
+                {
+                    "node": "<li class=\"root-category-item\" />",
+                    "currentRect": {
+                        "x": 1983,
+                        "y": 164,
+                        "width": 159,
+                        "height": 96,
+                        "top": 164,
+                        "right": 2142,
+                        "bottom": 260,
+                        "left": 1983
+                    },
+                    "previousRect": {
+                        "x": 2073,
+                        "y": 164,
+                        "width": 159,
+                        "height": 96,
+                        "top": 164,
+                        "right": 2232,
+                        "bottom": 260,
+                        "left": 2073
+                    }
+                },
+                {
+                    "node": "<li class=\"root-category-item\" />",
+                    "currentRect": {
+                        "x": 1440,
+                        "y": 164,
+                        "width": 168,
+                        "height": 96,
+                        "top": 164,
+                        "right": 1608,
+                        "bottom": 260,
+                        "left": 1440
+                    },
+                    "previousRect": {
+                        "x": 1530,
+                        "y": 164,
+                        "width": 168,
+                        "height": 96,
+                        "top": 164,
+                        "right": 1698,
+                        "bottom": 260,
+                        "left": 1530
+                    }
+                }
+            ],
+            "startTime": 2819.1999999284744,
+            "value": 0.0015008967950898176
+        },
+        {
+            "duration": 0,
+            "entryType": "layout-shift",
+            "hadRecentInput": false,
+            "lastInputTime": 0,
+            "name": "",
+            "sources": [
+                {
+                    "node": "<li />",
+                    "currentRect": {
+                        "x": 2748,
+                        "y": 0,
+                        "width": 381,
+                        "height": 80,
+                        "top": 0,
+                        "right": 3129,
+                        "bottom": 80,
+                        "left": 2748
+                    },
+                    "previousRect": {
+                        "x": 2891,
+                        "y": 0,
+                        "width": 381,
+                        "height": 80,
+                        "top": 0,
+                        "right": 3272,
+                        "bottom": 80,
+                        "left": 2891
+                    }
+                }
+            ],
+            "startTime": 3458.5,
+            "value": 0.0005263441676706556
+        }
+    ],
+    "fid": [],
+    "inp": [
+        {
+            "duration": 24,
+            "entryType": "event",
+            "interactionId": 0,
+            "name": "pointerout",
+            "processingEnd": 1837.3999999761581,
+            "processingStart": 1837.3999999761581,
+            "startTime": 1823,
+            "target": "<img class=\" ls-is-cached lazyloaded\" />"
+        }
+    ]
+}

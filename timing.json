@@ -1,0 +1,56 @@
+{
+    "Zone": {
+        "_gen": "uniformDistribution",
+        "bounds": [0, 100]
+    },
+    "Zone:ZoneAwarePromise": {
+        "_gen": "uniformDistribution",
+        "bounds": [0, 1]
+    },
+    "Zone:toString": {
+        "_gen": "uniformDistribution",
+        "bounds": [0, 1]
+    },
+    "Zone:util": {
+        "_gen": "uniformDistribution",
+        "bounds": [0, 1]
+    },
+    "Zone:legacy": 0,
+    "Zone:queueMicrotask": 0,
+    "Zone:timers": {
+        "_gen": "uniformDistribution",
+        "bounds": [0, 1]
+    },
+    "Zone:requestAnimationFrame": {
+        "_gen": "uniformDistribution",
+        "bounds": [0, 1]
+    },
+    "Zone:blocking": 0,
+    "Zone:EventTarget": {
+        "_gen": "uniformDistribution",
+        "bounds": [0, 1]
+    },
+    "Zone:MutationObserver": {
+        "_gen": "uniformDistribution",
+        "bounds": [0, 1]
+    },
+    "Zone:IntersectionObserver": 0,
+    "Zone:FileReader": {
+        "_gen": "uniformDistribution",
+        "bounds": [0, 1]
+    },
+    "Zone:on_property": {
+        "_gen": "uniformDistribution",
+        "bounds": [3, 25]
+    },
+    "Zone:customElements": {
+        "_gen": "uniformDistribution",
+        "bounds": [0, 1]
+    },
+    "Zone:XHR": 0,
+    "Zone:geolocation": {
+        "_gen": "uniformDistribution",
+        "bounds": [0, 1]
+    },
+    "Zone:PromiseRejectionEvent": 0
+}

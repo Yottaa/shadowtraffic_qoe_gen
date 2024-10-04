@@ -1,0 +1,1 @@
+docker run --env-file license.env -v $(pwd)/timing.json:/home/timing.json -v $(pwd)/webVitalsInfo.json:/home/webVitalsInfo.json -v $(pwd)/page-views.json:/home/config.json shadowtraffic/shadowtraffic:debug --config /home/config.json --sample 10 --stdout
