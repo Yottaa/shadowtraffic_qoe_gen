@@ -51,7 +51,7 @@
                 "domainLookupStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
                 "loadEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
                 "domContentLoadedEventEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "loadEventEndOffset": { "_gen": "normalDistribution", "mean": 20, "sd": 5, "decimals": 0 },
+                "loadEventEndOffset": { "_gen": "normalDistribution", "mean": 3000, "sd": 1500, "decimals": 0 },
                 "redirectEndOffset": { "_gen": "normalDistribution", "mean": 10, "sd": 5, "decimals": 0 },
                 "connectEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 }
             },
@@ -319,7 +319,7 @@
                     },
                     "loadEventStart": {
                         "_gen": "math",
-                        "expr": "now - loadEventStartOffset"
+                        "expr": "now - connectStartOffset - loadEventStartOffset"
                     },
                     "domContentLoadedEventEnd": {
                         "_gen": "math",
@@ -327,7 +327,7 @@
                     },
                     "loadEventEnd": {
                         "_gen": "math",
-                        "expr": "now - loadEventEndOffset"
+                        "expr": "now - connectStartOffset + loadEventEndOffset"
                     },
                     "redirectEnd": {
                         "_gen": "math",
