@@ -293,87 +293,244 @@
                 "navigationTiming": {
                     "connectStart": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.connectStartOffset"
+                        "expr": "now - connectStartOffset",
+                        "names": {
+                            "connectStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["connectStartOffset"]
+                            }
+                        }
                     },
                     "navigationStart": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.navigationStartOffset"
+                        "expr": "now - navigationStartOffset",
+                        "names": {
+                            "navigationStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["navigationStartOffset"]
+                            }
+                        }
                     },
                     "secureConnectionStart": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.secureConnectionStartOffset"
+                        "expr": "now - secureConnectionStartOffset",
+                        "names": {
+                            "secureConnectionStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["secureConnectionStartOffset"]
+                            }
+                        }
                     },
                     "fetchStart": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.fetchStartOffset"
+                        "expr": "now - fetchStartOffset",
+                        "names": {
+                            "fetchStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["fetchStartOffset"]
+                            }
+                        }
                     },
                     "domContentLoadedEventStart": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.domContentLoadedEventStartOffset"
+                        "expr": "now - domContentLoadedEventStartOffset",
+                        "names": {
+                            "domContentLoadedEventStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domContentLoadedEventStartOffset"]
+                            }
+                        }
                     },
                     "responseStart": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.responseStartOffset"
+                        "expr": "now - responseStartOffset",
+                        "names": {
+                            "responseStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["responseStartOffset"]
+                            }
+                        }
                     },
                     "domInteractive": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.domInteractiveOffset"
+                        "expr": "now - domInteractiveOffset",
+                        "names": {
+                            "domInteractiveOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domInteractiveOffset"]
+                            }
+                        }
                     },
                     "domainLookupEnd": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.domainLookupEndOffset"
+                        "expr": "now - domainLookupEndOffset",
+                        "names": {
+                            "domainLookupEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domainLookupEndOffset"]
+                            }
+                        }
                     },
                     "responseEnd": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.responseEndOffset"
+                        "expr": "now - responseEndOffset",
+                        "names": {
+                            "responseEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["responseEndOffset"]
+                            }
+                        }
                     },
                     "redirectStart": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.redirectStartOffset"
+                        "expr": "now - redirectStartOffset",
+                        "names": {
+                            "redirectStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["redirectStartOffset"]
+                            }
+                        }
                     },
                     "requestStart": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.requestStartOffset"
+                        "expr": "now - requestStartOffset",
+                        "names": {
+                            "requestStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["requestStartOffset"]
+                            }
+                        }
                     },
                     "unloadEventEnd": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.unloadEventEndOffset"
+                        "expr": "now - unloadEventEndOffset",
+                        "names": {
+                            "unloadEventEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["unloadEventEndOffset"]
+                            }
+                        }
                     },
                     "unloadEventStart": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.unloadEventStartOffset"
+                        "expr": "now - unloadEventStartOffset",
+                        "names": {
+                            "unloadEventStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["unloadEventStartOffset"]
+                            }
+                        }
                     },
                     "domLoading": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.domLoadingOffset"
+                        "expr": "now - domLoadingOffset",
+                        "names": {
+                            "domLoadingOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domLoadingOffset"]
+                            }
+                        }
                     },
                     "domComplete": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.domCompleteOffset"
+                        "expr": "now - domCompleteOffset",
+                        "names": {
+                            "domCompleteOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domCompleteOffset"]
+                            }
+                        }
                     },
                     "domainLookupStart": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.domainLookupStartOffset"
+                        "expr": "now - domainLookupStartOffset",
+                        "names": {
+                            "domainLookupStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domainLookupStartOffset"]
+                            }
+                        }
                     },
                     "loadEventStart": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.connectStartOffset - optimized_metrics.loadEventStartOffset"
+                        "expr": "now - connectStartOffset - loadEventStartOffset",
+                        "names": {
+                            "connectStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["connectStartOffset"]
+                            },
+                            "loadEventStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["loadEventStartOffset"]
+                            }
+                        }
                     },
                     "domContentLoadedEventEnd": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.domContentLoadedEventEndOffset"
+                        "expr": "now - domContentLoadedEventEndOffset",
+                        "names": {
+                            "domContentLoadedEventEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domContentLoadedEventEndOffset"]
+                            }
+                        }
                     },
                     "loadEventEnd": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.connectStartOffset + optimized_metrics.loadEventEndOffset"
+                        "expr": "now - connectStartOffset + loadEventEndOffset",
+                        "names": {
+                            "connectStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["connectStartOffset"]
+                            },
+                            "loadEventEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["loadEventEndOffset"]
+                            }
+                        }
                     },
                     "redirectEnd": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.redirectEndOffset"
+                        "expr": "now - redirectEndOffset",
+                        "names": {
+                            "redirectEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["redirectEndOffset"]
+                            }
+                        }
                     },
                     "connectEnd": {
                         "_gen": "math",
-                        "expr": "now - optimized_metrics.connectEndOffset"
+                        "expr": "now - connectEndOffset",
+                        "names": {
+                            "connectEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["connectEndOffset"]
+                            }
+                        }
                     }
                 },
                 "experienceMetrics": {
