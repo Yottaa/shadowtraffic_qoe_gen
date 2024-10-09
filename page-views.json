@@ -12,7 +12,8 @@
                                 "criteNd7kn93MQ",
                                 "Ye_0V4TqgO5ieQ",
                                 "fYvuPWK1zbUzXQ",
-                                "j8906zYRbQtUeQ"
+                                "j8906zYRbQtUeQ",
+                                "IID52n4SjSBhkg"
                             ]
                         },
                         "sessionId": {
@@ -32,27 +33,65 @@
                 "now": {
                     "_gen": "now"
                 },
-                "connectStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "navigationStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "secureConnectionStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "fetchStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "domContentLoadedEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "responseStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "domInteractiveOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "domainLookupEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "responseEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "redirectStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "requestStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "unloadEventEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "unloadEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "domLoadingOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "domCompleteOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "domainLookupStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "loadEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "domContentLoadedEventEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
-                "loadEventEndOffset": { "_gen": "normalDistribution", "mean": 3000, "sd": 1500, "decimals": 0 },
-                "redirectEndOffset": { "_gen": "normalDistribution", "mean": 10, "sd": 5, "decimals": 0 },
-                "connectEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 }
+                "optimized_metrics": {
+                    "_gen": "weightedOneOf",
+                    "choices":[
+                        {
+                            "weight": 99,
+                            "value": {
+                                "optState": "active",
+                                "connectStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "navigationStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "secureConnectionStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "fetchStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domContentLoadedEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "responseStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domInteractiveOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domainLookupEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "responseEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "redirectStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "requestStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "unloadEventEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "unloadEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domLoadingOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domCompleteOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domainLookupStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "loadEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domContentLoadedEventEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "loadEventEndOffset": { "_gen": "normalDistribution", "mean": 3000, "sd": 1500, "decimals": 0 },
+                                "redirectEndOffset": { "_gen": "normalDistribution", "mean": 10, "sd": 5, "decimals": 0 },
+                                "connectEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 }
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "value": {
+                                "optState": "none",
+                                "connectStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "navigationStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "secureConnectionStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "fetchStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domContentLoadedEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "responseStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domInteractiveOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domainLookupEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "responseEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "redirectStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "requestStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "unloadEventEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "unloadEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domLoadingOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domCompleteOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domainLookupStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "loadEventStartOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "domContentLoadedEventEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 },
+                                "loadEventEndOffset": { "_gen": "normalDistribution", "mean": 4000, "sd": 1500, "decimals": 0 },
+                                "redirectEndOffset": { "_gen": "normalDistribution", "mean": 10, "sd": 5, "decimals": 0 },
+                                "connectEndOffset": { "_gen": "normalDistribution", "mean": 50, "sd": 5, "decimals": 0 }
+                            }
+                        }
+                    ]
+                }
             },
             "data": {
                 "siteKey": {
@@ -210,7 +249,11 @@
                     }
                 },
                 "commonDimensions": {
-                    "optState": "active",
+                    "optState": {
+                        "_gen": "var",
+                        "var": "optimized_metrics",
+                        "path": ["optState"]
+                    },
                     "profileId": {
                         "_gen": "normalDistribution",
                         "mean": 50000,
@@ -254,87 +297,244 @@
                 "navigationTiming": {
                     "connectStart": {
                         "_gen": "math",
-                        "expr": "now - connectStartOffset"
+                        "expr": "now - connectStartOffset",
+                        "names": {
+                            "connectStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["connectStartOffset"]
+                            }
+                        }
                     },
                     "navigationStart": {
                         "_gen": "math",
-                        "expr": "now - navigationStartOffset"
+                        "expr": "now - navigationStartOffset",
+                        "names": {
+                            "navigationStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["navigationStartOffset"]
+                            }
+                        }
                     },
                     "secureConnectionStart": {
                         "_gen": "math",
-                        "expr": "now - secureConnectionStartOffset"
+                        "expr": "now - secureConnectionStartOffset",
+                        "names": {
+                            "secureConnectionStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["secureConnectionStartOffset"]
+                            }
+                        }
                     },
                     "fetchStart": {
                         "_gen": "math",
-                        "expr": "now - fetchStartOffset"
+                        "expr": "now - fetchStartOffset",
+                        "names": {
+                            "fetchStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["fetchStartOffset"]
+                            }
+                        }
                     },
                     "domContentLoadedEventStart": {
                         "_gen": "math",
-                        "expr": "now - domContentLoadedEventStartOffset"
+                        "expr": "now - domContentLoadedEventStartOffset",
+                        "names": {
+                            "domContentLoadedEventStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domContentLoadedEventStartOffset"]
+                            }
+                        }
                     },
                     "responseStart": {
                         "_gen": "math",
-                        "expr": "now - responseStartOffset"
+                        "expr": "now - responseStartOffset",
+                        "names": {
+                            "responseStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["responseStartOffset"]
+                            }
+                        }
                     },
                     "domInteractive": {
                         "_gen": "math",
-                        "expr": "now - domInteractiveOffset"
+                        "expr": "now - domInteractiveOffset",
+                        "names": {
+                            "domInteractiveOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domInteractiveOffset"]
+                            }
+                        }
                     },
                     "domainLookupEnd": {
                         "_gen": "math",
-                        "expr": "now - domainLookupEndOffset"
+                        "expr": "now - domainLookupEndOffset",
+                        "names": {
+                            "domainLookupEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domainLookupEndOffset"]
+                            }
+                        }
                     },
                     "responseEnd": {
                         "_gen": "math",
-                        "expr": "now - responseEndOffset"
+                        "expr": "now - responseEndOffset",
+                        "names": {
+                            "responseEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["responseEndOffset"]
+                            }
+                        }
                     },
                     "redirectStart": {
                         "_gen": "math",
-                        "expr": "now - redirectStartOffset"
+                        "expr": "now - redirectStartOffset",
+                        "names": {
+                            "redirectStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["redirectStartOffset"]
+                            }
+                        }
                     },
                     "requestStart": {
                         "_gen": "math",
-                        "expr": "now - requestStartOffset"
+                        "expr": "now - requestStartOffset",
+                        "names": {
+                            "requestStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["requestStartOffset"]
+                            }
+                        }
                     },
                     "unloadEventEnd": {
                         "_gen": "math",
-                        "expr": "now - unloadEventEndOffset"
+                        "expr": "now - unloadEventEndOffset",
+                        "names": {
+                            "unloadEventEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["unloadEventEndOffset"]
+                            }
+                        }
                     },
                     "unloadEventStart": {
                         "_gen": "math",
-                        "expr": "now - unloadEventStartOffset"
+                        "expr": "now - unloadEventStartOffset",
+                        "names": {
+                            "unloadEventStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["unloadEventStartOffset"]
+                            }
+                        }
                     },
                     "domLoading": {
                         "_gen": "math",
-                        "expr": "now - domLoadingOffset"
+                        "expr": "now - domLoadingOffset",
+                        "names": {
+                            "domLoadingOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domLoadingOffset"]
+                            }
+                        }
                     },
                     "domComplete": {
                         "_gen": "math",
-                        "expr": "now - domCompleteOffset"
+                        "expr": "now - domCompleteOffset",
+                        "names": {
+                            "domCompleteOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domCompleteOffset"]
+                            }
+                        }
                     },
                     "domainLookupStart": {
                         "_gen": "math",
-                        "expr": "now - domainLookupStartOffset"
+                        "expr": "now - domainLookupStartOffset",
+                        "names": {
+                            "domainLookupStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domainLookupStartOffset"]
+                            }
+                        }
                     },
                     "loadEventStart": {
                         "_gen": "math",
-                        "expr": "now - connectStartOffset - loadEventStartOffset"
+                        "expr": "now - connectStartOffset - loadEventStartOffset",
+                        "names": {
+                            "connectStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["connectStartOffset"]
+                            },
+                            "loadEventStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["loadEventStartOffset"]
+                            }
+                        }
                     },
                     "domContentLoadedEventEnd": {
                         "_gen": "math",
-                        "expr": "now - domContentLoadedEventEndOffset"
+                        "expr": "now - domContentLoadedEventEndOffset",
+                        "names": {
+                            "domContentLoadedEventEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["domContentLoadedEventEndOffset"]
+                            }
+                        }
                     },
                     "loadEventEnd": {
                         "_gen": "math",
-                        "expr": "now - connectStartOffset + loadEventEndOffset"
+                        "expr": "now - connectStartOffset + loadEventEndOffset",
+                        "names": {
+                            "connectStartOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["connectStartOffset"]
+                            },
+                            "loadEventEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["loadEventEndOffset"]
+                            }
+                        }
                     },
                     "redirectEnd": {
                         "_gen": "math",
-                        "expr": "now - redirectEndOffset"
+                        "expr": "now - redirectEndOffset",
+                        "names": {
+                            "redirectEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["redirectEndOffset"]
+                            }
+                        }
                     },
                     "connectEnd": {
                         "_gen": "math",
-                        "expr": "now - connectEndOffset"
+                        "expr": "now - connectEndOffset",
+                        "names": {
+                            "connectEndOffset": {
+                                "_gen": "var",
+                                "var": "optimized_metrics",
+                                "path": ["connectEndOffset"]
+                            }
+                        }
                     }
                 },
                 "experienceMetrics": {
