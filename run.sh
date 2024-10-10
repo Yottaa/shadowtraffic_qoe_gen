@@ -1,1 +1,1 @@
-docker run --env-file license.env -v $(pwd)/timing.json:/home/timing.json -v $(pwd)/webVitalsInfo.json:/home/webVitalsInfo.json -v $(pwd)/page-views.json:/home/config.json shadowtraffic/shadowtraffic:latest --config /home/config.json 
+docker run --env-file license.env -v $(pwd)/timing.json:/config/timing.json -v $(pwd)/webVitalsInfo.json:/config/webVitalsInfo.json -v $(pwd)/page-views.json:/config/config.json shadowtraffic/shadowtraffic:latest --config /config/config.json 

@@ -556,7 +556,7 @@
                 },
                 "webVitalsInfo": {
                     "_gen": "loadJsonFile",
-                    "file": "/home/webVitalsInfo.json"
+                    "file": "/config/webVitalsInfo.json"
                 },
                 "paintTiming": {
                     "first-paint": {
@@ -570,11 +570,11 @@
                 },
                 "userTiming": {
                     "_gen": "loadJsonFile",
-                    "file": "/home/timing.json"
+                    "file": "/config/timing.json"
                 },
                 "measureTiming": {
                     "_gen": "loadJsonFile",
-                    "file": "/home/timing.json"
+                    "file": "/config/timing.json"
                 }
             },
             "localConfigs": {
