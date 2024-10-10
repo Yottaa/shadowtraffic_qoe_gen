@@ -9,11 +9,7 @@
                         "siteKey": {
                             "_gen": "oneOf",
                             "choices": [
-                                "criteNd7kn93MQ",
-                                "Ye_0V4TqgO5ieQ",
-                                "fYvuPWK1zbUzXQ",
-                                "j8906zYRbQtUeQ",
-                                "IID52n4SjSBhkg"
+                                "mT8gAoKNeyzycw"
                             ]
                         },
                         "sessionId": {
@@ -21,7 +17,7 @@
                         }
                     }
                 },
-                "maxForks": 50000,
+                "maxForks": 10000,
                 "keepAlive": true
             },
             "varsOnce": {
