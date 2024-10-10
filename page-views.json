@@ -21,7 +21,7 @@
                         }
                     }
                 },
-                "maxForks": 50000,
+                "maxForks": 20000,
                 "keepAlive": true
             },
             "varsOnce": {
