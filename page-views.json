@@ -21,7 +21,8 @@
                         }
                     }
                 },
-                "maxForks": 10000
+                "maxForks": 10000,
+                "keepAlive": true
             },
             "varsOnce": {
                 "userAgent": {
